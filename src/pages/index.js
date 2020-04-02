@@ -1,21 +1,47 @@
+//TODO: Work Page
+//TODO: Contact Form
+
+
 import React from "react"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
+import Layout from "../components/layout/layout"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import NextIcon from "../images/next.svg"
+import coderImage from "../images/code.svg"
+import classes from "./index.module.css"
+import BackgroundImage from "../components/background/background"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+export default () => {
+  const nextIcon = () => {
+    navigate("/skills")
+  }
 
-export default IndexPage
+  return (
+    <Layout>
+      <div className={classes.row}>
+        <BackgroundImage>
+          <div className={classes.backdrop}>
+            <div className={classes.content}>
+              <div className={classes.heading1}>
+                <h1>Hi, I'M Shubham Jain, a Javascript and Python developer</h1>
+              </div>
+            </div>
+          </div>
+          <div className={classes.image}>
+            <img
+              src={coderImage}
+              alt="Coder Vector"
+              height="100%"
+              style={{ paddingRight: "3em" }}
+            />
+          </div>
+          <div className={classes.nextPage}>
+            <div className={classes.nextIcon} onClick={nextIcon}>
+              <img src={NextIcon} alt="NextIcon" width="100%" height="100%" />
+            </div>
+          </div>
+        </BackgroundImage>
+      </div>
+    </Layout>
+  )
+}

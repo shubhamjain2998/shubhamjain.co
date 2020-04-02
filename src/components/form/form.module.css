@@ -1,0 +1,107 @@
+.container {
+  padding: 2em;
+  /* width: 100%; */
+}
+
+.formDiv {
+  /* padding: 2em; */
+  /* width: 100%; */
+}
+
+.container h3 {
+  padding: 1em 0;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-weight: 550;
+  font-size: 3.8em;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  text-align: center;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8), 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fieldStyle,
+.textArea textarea {
+  width: 100%;
+  background-color: rgba(8, 20, 24, 0.7);
+  border: 0;
+  color: white;
+  padding: 1em 0.5em;
+  margin: 0.3em 0;
+  border: 2px solid transparent;
+  border-radius: 0.5em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.textArea textarea {
+  height: 6em;
+}
+
+.errorDiv {
+  width: 100%;
+  background-color: transparent;
+  padding: 1em 0.5em;
+  margin: 0;
+  color: #d64161;
+  border: 0;
+  font-size: 1.6em;
+  border: 2px solid transparent;
+  letter-spacing: 0.09em;
+  font-weight: 500;
+}
+
+.formDiv ::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.formDiv :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.formDiv ::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.formDiv button {
+  height: 3em;
+  width: 50%;
+  border: 0;
+  background-color: rgb(8, 22, 27);
+  letter-spacing: 0.1em;
+  /* padding: 1em; */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8em;
+  line-height: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.formDiv button:hover {
+  cursor: pointer;
+  border: 2px solid #d64161;
+  background-color: rgba(214, 65, 97, 0.6);
+  color: #ffffff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid rgba(0, 128, 0, 0.6);
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+

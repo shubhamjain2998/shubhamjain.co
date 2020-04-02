@@ -1,0 +1,142 @@
+.row {
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 100%;
+  padding: 5%;
+  margin: 2%;
+  background-color: rgba(32, 58, 67, 0.8);
+  animation: flash 1.5s steps(30, end);
+}
+
+.heading1,
+.subHeading {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  flex: 0 0 auto;
+  width: 83.3333334%;
+  height: 100%;
+  animation: first-animation 3s steps(30, end);
+}
+
+.heading1 h1 {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-size: 4.8em;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+  text-transform: uppercase;
+  margin: 0.3em auto;
+  animation: typing 3.5s 1.5s steps(30, end);
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8), 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.heading1 h6 {
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin: 1rem 0;
+}
+
+.image {
+  margin: 2em 0;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nextPage {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nextIcon {
+  height: 100%;
+  width: 6em;
+  background-color: rgba(214, 65, 97, 0.2);
+  animation: blink 4s steps(30, end) infinite;
+}
+
+.nextIcon:hover {
+  background-color: rgba(214, 65, 97, 0.6);
+  cursor: pointer;
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+@keyframes first-animation {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background-color: rgba(214, 65, 97, 0.2);
+  }
+  50% {
+    background-color: rgba(214, 65, 97, 0.6);
+  }
+}
+
+@media (max-width: 700px) {
+  .row {
+    min-height: 90vh;
+  }
+}
