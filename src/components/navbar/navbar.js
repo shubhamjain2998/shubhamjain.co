@@ -5,9 +5,9 @@ import classes from './navbar.module.css'
 
 const navbar = () => (
   <div className={classes.navbar}>
-    <div className={classes.name}>
+    <Link to="/" className={classes.name}>
       <h1>SJ</h1>
-    </div>
+    </Link>
     <div className={classes.menu}>
       <Link
         to="/"

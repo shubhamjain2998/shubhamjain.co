@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgb(13, 24, 29);
+  position: relative;
+  padding-bottom: 3em;
+  perspective: 1200px;
+}
+
+.bg {
+    position: fixed;
+    /* top: 10em; */
+    /* left: 40em; */
+    right: 20em;
+    width: 40%;
+    transform-style: preserve-3d;
+    transform: rotateY(25deg);
+}

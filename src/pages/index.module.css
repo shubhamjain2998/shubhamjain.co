@@ -24,6 +24,7 @@
   padding: 5%;
   margin: 2%;
   background-color: rgba(32, 58, 67, 0.8);
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.9);
   animation: flash 1.5s steps(30, end);
 }
 
@@ -43,7 +44,7 @@
   line-height: 1.5em;
   font-weight: 500;
   font-size: 4.8em;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   overflow: hidden;
   text-transform: uppercase;
   margin: 0.3em auto;

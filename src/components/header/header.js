@@ -5,7 +5,7 @@ import MenuIcon from "../../images/menu-outline.svg"
 import Navbar from "../navbar/navbar"
 
 const Header = (props) => {
-  const [hide, setHide] = useState(false)
+  const [hide, setHide] = useState(true)
   let nav = <Navbar />
 
   useEffect(() => {

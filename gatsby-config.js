@@ -4,7 +4,8 @@ module.exports = {
     description: `A Personal Portfolio`,
     keywords: `'Shubham Jain', 'javascript', 'python', 'Developer', 'software'`,
     author: `Shubham Jain`,
-    siteUrl: `http://theshubhamjain.co/`
+    siteUrl: `https://theshubhamjain.co/`,
+    defaultImage: `/images/profiles.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,18 +17,18 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'http://www.theshubhamjain.co',
+        host: "http://www.theshubhamjain.co",
         env: {
           development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
+            policy: [{ userAgent: "*", disallow: ["/"] }],
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
-      }
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -41,20 +42,21 @@ module.exports = {
         description: `A Personal Portfolio`,
         start_url: `/`,
         background_color: `#f7f0eb`,
-        theme_color: `#4A148C`,
+        theme_color: `#6db5c9`,
         lang: `en`,
         display: `standalone`,
-        icon: `src/images/profiles.png`
+        icon: `src/images/profiles.png`,
       },
     },
     `gatsby-plugin-offline`,
+
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Quicksand', 'Raleway', 'Playfair Display', 'Comic Neue']
-        }
-      }
+          families: ["Quicksand", "Raleway", "Playfair Display", "Comic Neue"],
+        },
+      },
     },
   ],
 }
