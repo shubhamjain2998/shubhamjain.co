@@ -16,10 +16,10 @@ export default () => (
           style={{ width: "50%", backgroundColor: "rgba(245, 127, 23,0.4)" }}
         >
           <div className={classes.projectTitle}>
-            <h3>Effcon Technology, Raipur</h3>
+            <h3>Worked as an Assistant Trainer.</h3>
           </div>
           <div className={classes.projectStack}>
-            Worked as an Assistant Trainer.<br></br>(06/2019 - 07/2019)
+            Effcon Technology, Raipur<br></br>(06/2019 - 07/2019)
           </div>
           <div className={classes.projectDescription}>
             <p>
@@ -38,10 +38,10 @@ export default () => (
           style={{ backgroundColor: "rgba(21, 101, 192, 0.4)" }}
         >
           <div className={classes.projectTitle}>
-            <h3>Effcon Technology, Raipur</h3>
+            <h3>Machine Learning.</h3>
           </div>
           <div className={classes.projectStack}>
-            Machine Learning.<br></br>(06/2019 - 07/2019)
+            Effcon Technology, Raipur<br></br>(06/2019 - 07/2019)
           </div>
           <div className={classes.projectDescription}>
             <p>
@@ -54,10 +54,10 @@ export default () => (
           style={{ backgroundColor: "rgba(239, 83, 80,0.4)" }}
         >
           <div className={classes.projectTitle}>
-            <h3>Effcon Technology, Raipur</h3>
+            <h3>Python and Django.</h3>
           </div>
           <div className={classes.projectStack}>
-            Python and Django<br></br>(06/2018 - 07/2018)
+            Effcon Technology, Raipur<br></br>(06/2018 - 07/2018)
           </div>
           <div className={classes.projectDescription}>
             <p>

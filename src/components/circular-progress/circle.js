@@ -50,28 +50,30 @@ const ProgressRing = props => {
             <stop offset="100%" stopColor="#fff" />
           </linearGradient>
         </defs>
-        <circle
-          stroke="url(#linear)"
-          fill="transparent"
-          strokeDasharray={circumference + " " + circumference}
-          style={{ strokeDashoffset: dashOffset }}
-          strokeWidth={dynamicStroke}
-          r={normalizedRadius}
-          cx={dynamicRadius}
-          cy={dynamicRadius}
-        />
-        <text
-          x="50%"
-          y="50%"
-          textAnchor="middle"
-          fill="url(#text)"
-          fontSize="2.6em"
-          fontFamily="Arial"
-          dy=".3em"
-        >
-          {showPercent}%
-        </text>
-        Sorry, your browser does not support inline SVG.
+        <g>
+          <circle
+            stroke="url(#linear)"
+            fill="transparent"
+            strokeDasharray={circumference + " " + circumference}
+            style={{ strokeDashoffset: dashOffset }}
+            strokeWidth={dynamicStroke}
+            r={normalizedRadius}
+            cx={dynamicRadius}
+            cy={dynamicRadius}
+          />
+          <text
+            x="50%"
+            y="50%"
+            textAnchor="middle"
+            fill="url(#text)"
+            fontSize="2.6em"
+            fontFamily="Arial"
+            dy=".3em"
+          >
+            {showPercent}%
+          </text>
+          Sorry, your browser does not support inline SVG.
+        </g>
       </svg>
     </div>
   )
