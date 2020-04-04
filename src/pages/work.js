@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout/layout"
-import Card from "../components/card/card"
-import Browser from "../images/browser.svg"
 import classes from "./skills.module.css"
+import SEO from "../components/seo"
 
 export default () => (
   <Layout>
+    <SEO title="Trainings and Interships." />
     <div className={classes.container}>
       <div className={classes.heading}>
         <h3>Internships</h3>

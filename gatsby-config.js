@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Shubham Jain Portfolio`,
-    description: `A Personal Portfolio`,
-    keywords: `'Shubham Jain', 'javascript', 'python', 'Developer', 'software'`,
+    title: `Web Developer Bio | Resume`,
+    description: `Portfolio for Shubham Jain.  Javascript and Python Developer. The website shows the technical skills I possess as a web developer and also the projects developed using the same.`,
+    keywords: `'Web Developer Bio | Resume', 'Web Developer Portfolio Website', 'Web Developer Skills | Python | JavaScript', 'Project Based On Web Development'`,
     author: `Shubham Jain`,
     siteUrl: `https://theshubhamjain.co/`,
     defaultImage: `/images/profiles.png`,
+    twitterUsername: `jains1801`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,7 +40,7 @@ module.exports = {
       options: {
         name: `Shubham Jain Portfolio`,
         short_name: `SJ Portfolio`,
-        description: `A Personal Portfolio`,
+        description: `Portfolio for Shubham Jain.  Javascript and Python Developer. The website shows about my technical skills and also the projects I have worked on.`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#6db5c9`,
@@ -58,5 +59,29 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `218720403`,
+      },
+    },
+
+    {
+      resolve: "gatsby-plugin-htaccess",
+      options: {
+        RewriteBase: true,
+        https: true,
+        www: false,
+        SymLinksIfOwnerMatch: true,
+        host: "theshubhamjain.co", // if 'www' is set to 'false', be sure to also remove it here!
+        ErrorDocument: `
+          ErrorDocument 401 /error_pages/401.html
+          ErrorDocument 404 /404.html
+          ErrorDocument 500 /error_pages/500.html
+        `,
+      },
+    },
+
+    `gatsby-plugin-sitemap`,
   ],
 }

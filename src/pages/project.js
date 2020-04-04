@@ -2,8 +2,10 @@ import React from "react"
 import Layout from "../components/layout/layout"
 
 import classes from "./skills.module.css"
+import SEO from "../components/seo"
 export default () => (
   <Layout>
+    <SEO title="Project Based On Web Development" />
     <div className={classes.container}>
       <div className={classes.heading}>
         <h3>Projects I have Worked On-</h3>
@@ -87,7 +89,7 @@ export default () => (
 
       <div className={classes.row}>
         <h3 className={classes.PS}>
-        This portfolio website is also one of my projects, using GastByJS.
+          This portfolio website is also one of my projects, using GastByJS.
         </h3>
       </div>
     </div>

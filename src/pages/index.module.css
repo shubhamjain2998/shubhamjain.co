@@ -48,7 +48,7 @@
   overflow: hidden;
   text-transform: uppercase;
   margin: 0.3em auto;
-  animation: typing 3.5s 1.5s steps(30, end);
+  /* animation: typing 3.5s 1.5s steps(30, end); */
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8), 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 

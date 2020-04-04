@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Seo from '../seo'
 import Header from "../header/header"
 import Footer from "../footer/footer"
 import Sidebar from "../sidebar/sidebar"
@@ -23,7 +22,7 @@ const Layout = props => {
 
   return (
     <>
-      <Seo title="Shubham Jain Portfolio" />
+      
       <Header isMenuButtonClicked={toggleSidebar} />
       <div className={classes.container}>
         {sideBar ? null : sideMenu}

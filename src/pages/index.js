@@ -1,10 +1,8 @@
-//TODO: Work Page
-//TODO: Contact Form
-
 
 import React from "react"
 import { navigate } from "gatsby"
 import Layout from "../components/layout/layout"
+import SEO from "../components/seo"
 
 import NextIcon from "../images/next.svg"
 import coderImage from "../images/code.svg"
@@ -18,6 +16,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO title="Web Developer Portfolio Website" />
       <div className={classes.row}>
         <BackgroundImage>
           <div className={classes.backdrop}>
