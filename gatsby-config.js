@@ -5,8 +5,8 @@ module.exports = {
     keywords: `'Web Developer Bio | Resume', 'Web Developer Portfolio Website', 'Web Developer Skills | Python | JavaScript', 'Project Based On Web Development'`,
     author: `Shubham Jain`,
     siteUrl: `https://theshubhamjain.co/`,
-    defaultImage: `/images/profiles.png`,
-    twitterUsername: `jains1801`,
+    defaultImage: `/profiles-db9398c89ee961646f2f2702af68214d.png`,
+    twitterUsername: `@jains1801`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

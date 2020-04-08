@@ -19,6 +19,7 @@ const MessageForm = () => {
     let templateParams = {
       to_name: "jains1801@gmail.com",
       from_name: values.name,
+      from_email:values.email,
       //   subject: name + " Feedback From Portfolio Site",
       message_html: values.message,
     }

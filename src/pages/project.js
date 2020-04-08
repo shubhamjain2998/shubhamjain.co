@@ -89,7 +89,7 @@ export default () => (
 
       <div className={classes.row}>
         <h3 className={classes.PS}>
-          This portfolio website is also one of my projects, using GastByJS.
+          This portfolio website is also one of my projects, using gatsbyJS.
         </h3>
       </div>
     </div>
