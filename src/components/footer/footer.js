@@ -24,9 +24,9 @@ const footer = () => (
       </div>
       <div className={classes.resumeSection}>
         <a
-          href="https://drive.google.com/file/d/1DHou9oOn8g9koP-u1i3iHJ9fFlf06FAL/view"
+          href="https://drive.google.com/file/d/1GWxRVTPFHyBepp2wKcQlaCgJp34TE6j_/view?usp=sharing"
           target="blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
           <div className={classes.resume}>
@@ -71,14 +71,14 @@ const footer = () => (
           <a
             href="https://github.com/shubhamjain2998"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img src={Github} alt="Github" className={classes.socialIcons} />
           </a>
           <a
             href="https://www.linkedin.com/in/jains1801/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img
               src={Linkedin}
@@ -88,7 +88,7 @@ const footer = () => (
           </a>
           <a
             href="https://www.instagram.com/_shubham_jn/?igshid=63ngerjr1yu6"
-            rel="noopener"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <img src={Insta} alt="Instagram" className={classes.socialIcons} />
@@ -96,7 +96,7 @@ const footer = () => (
           <a
             href="https://www.hackerrank.com/jains1801"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <img
               src={Hackerrank}

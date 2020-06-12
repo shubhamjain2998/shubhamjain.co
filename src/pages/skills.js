@@ -19,7 +19,7 @@ export default () => {
             <CircularProgress radius="100" stroke="8" progress={70} />
           </Card>
           <Card title="JavaScript" backColor="rgba(67, 160, 71, 0.5)">
-            <CircularProgress radius="100" stroke="8" progress={65} />
+            <CircularProgress radius="100" stroke="8" progress={80} />
           </Card>
           <Card title="Machine Learning" backColor="rgba(245, 127, 23,0.4)">
             <CircularProgress radius="100" stroke="8" progress={40} />
@@ -52,9 +52,6 @@ export default () => {
           </Card>
           <Card title="OpenCv" backColor="rgba(245, 127, 23,0.4)">
             <CircularProgress radius="100" stroke="8" progress={40} />
-          </Card>
-          <Card title="WordPress" backColor="rgba(21, 101, 192, 0.4)">
-            <CircularProgress radius="100" stroke="8" progress={30} />
           </Card>
         </div>
       </div>
